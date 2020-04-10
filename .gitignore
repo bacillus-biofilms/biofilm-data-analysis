@@ -1,0 +1,6 @@
+**/.idea/
+.Rproj.user
+**/__pycache__/*
+.idea/
+**/__pycache__/
+**/.Rproj.user/

@@ -1,0 +1,122 @@
+LC	quant	sample	hit	total	p_value	p_adj	log_odds
+Metabolism#Carbon metabolism#Utilization of specific carbon sources	137	1847	240	8186	8.270911865866414e-32	1.4294892674839116e-29	2.28
+Metabolism#Nucleotide metabolism#Utilization of nucleotides	15	1847	21	8186	2.529652167308961e-06	6.558123243748482e-05	3.11
+Groups of genes#Universally conserved proteins	16	1847	28	8186	7.72479823263856e-05	0.0014834473643048492	2.20
+Metabolism#Lipid metabolism#Utilization of lipids	17	1847	32	8186	0.00015736187451824	0.0025497541230533574	1.97
+Metabolism#Additional metabolic pathways#Iron metabolism	24	1847	53	8186	0.0002009796310291835	0.0031578163238979284	1.52
+Metabolism#Amino acid/ nitrogen metabolism#Utilization of nitrogen sources other than amino acids	23	1847	54	8186	0.0007931428735543652	0.011266974792820229	1.36
+Cellular processes#Transporters#ABC transporters	63	1847	196	8186	0.0011448008985109396	0.01502732318678284	0.72
+Lifestyles#Coping with stress#Cell envelope stress proteins (controlled by SigM, V, W, X, Y)	45	1847	131	8186	0.0012760005114922173	0.016335957165647275	0.86
+Cellular processes#Homeostasis#Acquisition of iron	19	1847	44	8186	0.0018254888668135982	0.02201199947541513	1.39
+
+6H	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Exponential and early post-exponential lifestyles#Motility and chemotaxis	62	1786	76	8186	1.1319914592713156e-28	1.3043057147381714e-26	4.04
+Information processing#Protein synthesis, modification and degradation#Translation	105	1786	207	8186	1.9151827305270042e-20	1.4186032082546452e-18	1.95
+Metabolism#Amino acid/ nitrogen metabolism#Biosynthesis/ acquisition of amino acids	79	1786	158	8186	3.2461847554954726e-15	1.8701631063604473e-13	1.89
+Metabolism#Nucleotide metabolism#Biosynthesis/ acquisition of nucleotides	42	1786	65	8186	1.1966386163057527e-13	6.531127605837186e-12	2.74
+Prophages and mobile genetic elements#Prophages#PBSX prophage	29	1786	41	8186	2.691896995373055e-11	1.3292843734294563e-09	3.14
+Groups of genes#Essential genes	101	1786	257	8186	8.9725949152873e-11	4.045469968327361e-09	1.26
+Lifestyles#Exponential and early post-exponential lifestyles#Biofilm formation	34	1786	70	8186	6.289119112719227e-07	1.8116156999693998e-05	1.78
+Lifestyles#Exponential and early post-exponential lifestyles#Swarming	12	1786	16	8186	8.428696375851341e-06	0.0002081085271847105	3.44
+Groups of genes#Universally conserved proteins	16	1786	28	8186	5.001826725995506e-05	0.001037378862971468	2.27
+Information processing#Protein synthesis, modification and degradation#Chaperones/ protein folding	9	1786	12	8186	0.00012648690344527842	0.002186115314545895	3.43
+Metabolism#Detoxification reactions	8	1786	12	8186	0.001067928934406733	0.014372562213919393	2.85
+Lifestyles#Coping with stress#Biosynthesis of antibacterial compounds	21	1786	51	8186	0.0014113460262066733	0.01784836377044293	1.34
+
+12H	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Exponential and early post-exponential lifestyles#Motility and chemotaxis	53	1129	76	8186	5.974679844217634e-29	7.744678748067108e-27	3.91
+Prophages and mobile genetic elements#Prophages#PBSX prophage	33	1129	41	8186	8.413967449226576e-22	7.639411211365545e-20	4.73
+Metabolism#Additional metabolic pathways#Sulfur metabolism	21	1129	30	8186	2.9904310994610293e-12	1.5505385250705437e-10	3.89
+Lifestyles#Exponential and early post-exponential lifestyles#Biofilm formation	30	1129	70	8186	2.300496206481528e-09	8.835609504153128e-08	2.26
+Metabolism#Amino acid/ nitrogen metabolism#Biosynthesis/ acquisition of amino acids	49	1129	158	8186	1.4330445552239068e-08	4.793765173442553e-07	1.53
+Groups of genes#Secreted proteins	38	1129	116	8186	1.2377642608718533e-07	4.01112980788785e-06	1.64
+Metabolism#Nucleotide metabolism#Biosynthesis/ acquisition of nucleotides	21	1129	65	8186	0.00010234117353244857	0.0018115948833913548	1.59
+Cellular processes#Homeostasis#Acquisition of iron	16	1129	44	8186	0.0001434195131034028	0.0024381317227578476	1.85
+Metabolism#Carbon metabolism#Carbon core metabolism	18	1129	53	8186	0.0001547623226673256	0.0025497541230533574	1.70
+Groups of genes#Phosphoproteins#Phosphorylation on either a Ser, Thr or Tyr residue	13	1129	40	8186	0.001978378870972843	0.023581366542515383	1.60
+Metabolism#Detoxification reactions	6	1129	12	8186	0.0029826249370340932	0.033257871609724245	2.65
+Metabolism#Additional metabolic pathways#Iron metabolism	15	1129	53	8186	0.004214762477702243	0.04459906825895128	1.31
+
+1D	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Exponential and early post-exponential lifestyles#Motility and chemotaxis	50	1101	76	8186	4.641934574402057e-26	4.813686153654933e-24	3.69
+Lifestyles#Exponential and early post-exponential lifestyles#Biofilm formation	32	1101	70	8186	4.4146347042893375e-11	2.0808982674309285e-09	2.47
+Metabolism#Additional metabolic pathways#Sulfur metabolism	19	1101	30	8186	3.0376290016837844e-10	1.3125088644775351e-08	3.50
+Cellular processes#Homeostasis#Acquisition of iron	23	1101	44	8186	8.813265773493291e-10	3.515137156581747e-08	2.84
+Metabolism#Additional metabolic pathways#Iron metabolism	22	1101	53	8186	4.012614582766687e-07	1.2609337340391072e-05	2.21
+Metabolism#Nucleotide metabolism#Biosynthesis/ acquisition of nucleotides	22	1101	65	8186	2.1114441063861783e-05	0.0004561599038171806	1.74
+Metabolism#Nucleotide metabolism#Utilization of nucleotides	11	1101	21	8186	2.4031345557876402e-05	0.0005085817417044455	2.84
+Metabolism#Amino acid/ nitrogen metabolism#Biosynthesis/ acquisition of amino acids	38	1101	158	8186	0.00019691151392526026	0.003141495999084537	1.05
+no_annotation	36	1101	151	8186	0.00034427195890078196	0.005250147373236925	1.03
+Groups of genes#Secreted proteins	29	1101	116	8186	0.000554094553542166	0.0080929021411722	1.12
+Cellular processes#Transporters#ABC transporters	42	1101	196	8186	0.001237106674447245	0.01603599526752241	0.84
+Metabolism#Detoxification reactions	6	1101	12	8186	0.0026153169464577077	0.029479170363876553	2.69
+Prophages and mobile genetic elements#Prophages#SP-beta prophage	38	1101	181	8186	0.003015296011367865	0.033264488976473154	0.80
+Information processing#RNA synthesis and degradation#RNA chaperones	4	1101	6	8186	0.003895909219696488	0.0420839360502631	3.69
+
+2D	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Sporulation#Sporulation proteins	258	1199	541	8186	8.892994578823798e-82	2.3055088445600697e-79	2.70
+Cellular processes#Homeostasis#Acquisition of iron	23	1199	44	8186	4.840285848565098e-09	1.7308194568834506e-07	2.70
+Metabolism#Additional metabolic pathways#Iron metabolism	22	1199	53	8186	1.7755147223059617e-06	4.721048120593031e-05	2.07
+Lifestyles#Sporulation#Germination	17	1199	40	8186	1.8335895857275986e-05	0.0004225405334221155	2.12
+Metabolism#Additional metabolic pathways#Miscellaneous metabolic pathways	26	1199	77	8186	1.9376169937276818e-05	0.00043427835221782936	1.59
+no_annotation	40	1199	151	8186	9.250606141257972e-05	0.0017079373584217824	1.10
+Lifestyles#Coping with stress#Toxins, antitoxins and immunity against toxins	14	1199	33	8186	0.00010307048999044352	0.0018115948833913548	2.12
+Prophages and mobile genetic elements#Prophages#Prophage 1	8	1199	18	8186	0.002299971311543071	0.026594684135497475	2.23
+Metabolism#Nucleotide metabolism#Biosynthesis/ acquisition of nucleotides	18	1199	65	8186	0.004566806654178024	0.047357785003826106	1.17
+
+3D	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Sporulation#Sporulation proteins	381	1523	541	8186	1.4964281815604036e-167	5.172653414260461e-165	3.76
+Lifestyles#Sporulation#Germination	31	1523	40	8186	8.401239572279112e-16	5.1247561390902584e-14	3.94
+Lifestyles#Sporulation#Germination/ based on similarity	8	1523	8	8186	1.4142093676140317e-06	3.8593029321467124e-05	nan
+Lifestyles#Coping with stress#General stress proteins (controlled by SigB)	50	1523	159	8186	5.887221564924517e-05	0.0011740478390051393	1.03
+Information processing#Regulation of gene expression#Sigma factors and their control	26	1523	67	8186	8.392432598417454e-05	0.0015823550190107092	1.49
+Metabolism#Additional metabolic pathways#Miscellaneous metabolic pathways	27	1523	77	8186	0.00043856491043115	0.006497025887387179	1.26
+Prophages and mobile genetic elements#Prophages#Prophage 1	9	1523	18	8186	0.0025062226604208463	0.028559921965455138	2.14
+Lifestyles#Coping with stress#Toxins, antitoxins and immunity against toxins	13	1523	33	8186	0.00426299968691464	0.044653845205358395	1.52
+
+5D	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Sporulation#Sporulation proteins	398	1395	541	8186	6.014764267504066e-204	6.2373105454017164e-201	4.21
+Lifestyles#Sporulation#Germination	34	1395	40	8186	7.045583498522426e-21	5.620207759975197e-19	4.82
+Cellular processes#Homeostasis#Trace metal homeostasis (Cu, Zn, Ni, Mn, Mo)	11	1395	25	8186	0.0014637919332333583	0.018288581141722802	1.94
+Metabolism#Additional metabolic pathways#Phosphate metabolism	8	1395	17	8186	0.003963888732837226	0.042376831092290755	2.12
+
+7D	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Sporulation#Sporulation proteins	403	1636	541	8186	4.360294622537296e-180	2.2608127617855878e-177	3.92
+Lifestyles#Sporulation#Germination	34	1636	40	8186	1.3687426067443734e-18	8.871163019961969e-17	4.53
+Metabolism#Carbon metabolism#Utilization of specific carbon sources	75	1636	240	8186	1.8172149232294512e-05	0.0004225405334221155	0.89
+Metabolism#Amino acid/ nitrogen metabolism#Utilization of amino acids	30	1636	75	8186	5.117455461584666e-05	0.001040549277188882	1.43
+Cellular processes#Cell envelope and cell division#Cell wall/ other	11	1636	21	8186	0.0009479769649328811	0.013284488008586457	2.15
+
+14D	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Sporulation#Sporulation proteins	377	2584	541	8186	2.1552161865502283e-79	4.469918370905173e-77	2.50
+Metabolism#Carbon metabolism#Utilization of specific carbon sources	161	2584	240	8186	2.128036208210428e-30	3.1525336398774486e-28	2.22
+Lifestyles#Sporulation#Germination	32	2584	40	8186	3.5373921975099527e-10	1.4673102835271284e-08	3.13
+Lifestyles#Coping with stress#General stress proteins (controlled by SigB)	86	2584	159	8186	2.4575849894967696e-09	9.101841550386251e-08	1.38
+Groups of genes#Membrane proteins	421	2584	1076	8186	1.0426385663042815e-08	3.604053977525133e-07	0.56
+Metabolism#Amino acid/ nitrogen metabolism#Utilization of nitrogen sources other than amino acids	35	2584	54	8186	4.850229476778168e-07	1.479319990417341e-05	2.01
+Metabolism#Amino acid/ nitrogen metabolism#Utilization of amino acids	44	2584	75	8186	1.0592035783978527e-06	2.968632731888036e-05	1.64
+Cellular processes#Transporters#Transporters/ other	83	2584	174	8186	5.224100344674744e-06	0.0001321315135957978	1.01
+Cellular processes#Transporters#Phosphotransferase system	19	2584	26	8186	1.6228815939020828e-05	0.0003913786541573162	2.57
+Groups of genes#Efp-dependent proteins	22	2584	34	8186	6.996998194198352e-05	0.0013690353070535265	2.00
+Cellular processes#Transporters#ABC transporters	87	2584	196	8186	9.387890976860326e-05	0.0017079373584217824	0.81
+Groups of genes#Phosphoproteins#Phosphorylation on a Cys residue	12	2584	15	8186	0.00015676938064901233	0.0025497541230533574	3.12
+Prophages and mobile genetic elements#Prophages#PBSX prophage	23	2584	41	8186	0.000966363426275896	0.013361584973974723	1.48
+Metabolism#Nucleotide metabolism#Utilization of nucleotides	14	2584	21	8186	0.0009884135876424439	0.013486643294542293	2.12
+Metabolism#Additional metabolic pathways#Phosphate metabolism	12	2584	17	8186	0.001081060610111584	0.014372562213919393	2.38
+Lifestyles#Sporulation#Germination/ based on similarity	7	2584	8	8186	0.0017994564651768767	0.0219533688751579	3.93
+Groups of genes#Poorly characterized/ putative enzymes	83	2584	204	8186	0.0033352506087555803	0.03640689348715302	0.59
+
+1M	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Coping with stress#General stress proteins (controlled by SigB)	44	406	159	8186	8.840205837645762e-22	7.639411211365545e-20	3.02
+Metabolism#Carbon metabolism#Utilization of specific carbon sources	28	406	240	8186	1.9682818277953692e-05	0.00043427835221782936	1.40
+Lifestyles#Coping with stress#Resistance against oxidative and electrophile stress	14	406	100	8186	0.00038657247875802613	0.005809792180754682	1.68
+Prophages and mobile genetic elements#Prophages#Skin element	10	406	60	8186	0.0006542604990002969	0.009423168575879276	1.96
+Lifestyles#Sporulation#Sporulation proteins	42	406	541	8186	0.002308121091798238	0.026594684135497475	0.75
+
+2M	quant	sample	hit	total	p_value	p_adj	log_odds
+Lifestyles#Sporulation#Sporulation proteins	39	105	541	8186	4.19584661075169e-20	2.900728623566335e-18	3.16
+Prophages and mobile genetic elements#Mobile genetic elements#ICEBs1	6	105	25	8186	5.605415030025783e-07	1.6608043960390677e-05	4.68
+Cellular processes#Transporters#Phosphotransferase system	4	105	26	8186	0.000307490285007983	0.004759215306765348	3.86
+Lifestyles#Coping with stress#Acid stress proteins (controlled by YvrI-YvrHa)	2	105	5	8186	0.0015891507710293522	0.019618444637588554	5.71
+Prophages and mobile genetic elements#Prophages#SP-beta prophage	8	105	181	8186	0.002197964302143484	0.025901011151395373	1.91
+

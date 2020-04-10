@@ -1,0 +1,67 @@
+# Config file for functional enrichment analysis of gene expression data per phases.
+
+[paths]
+# Results folder path
+out_folder = ../example_data/functional_analysis/results
+
+# Path to file containing expression values
+expression_path = ../example_data/functional_analysis/transcriptome_data.txt
+
+# Gene categories path, the categories file is should be a csv text file containing different depths of categories for each gene
+# (see example file geneCategories_23_10_2019.csv)
+categories_path = ../example_data/functional_analysis/gene_categories.csv
+
+# Path to file containing gene_id-s and gene names, optionally alternative id-s and names can be given (flag alter_id = True)
+# If alter_id-s ar given the they are used in categories file and original id-s are used in the expression file.
+# The file is a tab separated text file (see example file features_3610_168_categories_operons.txt).
+# The column names of original id-s and original names must be given in section column names if alternative id-s are given their column names must be given.
+id_names_path = ../example_data/functional_analysis/features_3610_168.txt
+
+[flags]
+# Flag for alternative id-s
+alter_id = true
+# If flag is true results are store to specified folder, else results are stored to specified folder and in each iteration a heatmap is displayed. 
+only_save = true
+# If flag is true the total counts (used in hypergeometric test) per function are calculated for all gene phase combinations,
+# else the total counts are calculated from only the overexpressed gene phase combinations.
+total_count_all = true
+
+[column_names]
+# names of columns in id_names file containing id-s and names (alternative must be set if flag alter_id is set to true)
+orig_id = locus_tag_3610
+orig_name = symbol_3610
+alter_id = locus_tag_168
+alter_name = symbol_168
+
+[cutoff_expression]
+# The over expression cutoff value, if multiple values are given a grid search with category_depth is performed
+c_1 = 0
+c_2 = 0.5
+c_3 = 1
+c_4 = 1.5
+
+[category_depth]
+# The maximum depth of categories used from the categories file (ontology depth), if multiple values are given a grid search with cutoff_expression is performed
+d_1 = 1
+d_2 = 2
+d_3 = 3
+d_4 = 4
+d_5 = 5
+
+[phase_indexes]
+# A phase can contain multiple indexes separated with a space (e.a. 6H = 0 1 2 3) allowing the grouping of different phases in a single phase
+LC = 0
+6H = 1
+12H	= 2
+1D = 3
+2D = 4
+3D = 5
+5D = 6
+7D = 7
+14D	= 8
+1M = 9
+2M = 10
+
+[p_value]
+# significant p-value
+sig_p = 0.05
