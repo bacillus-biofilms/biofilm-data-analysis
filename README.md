@@ -2,7 +2,7 @@
 
 The repository contains data analysis scripts used in the paper [Embryo-like features in developing Bacillus subtilis biofilms](https://www.biorxiv.org/content/10.1101/2020.03.09.983718v1).
 
-##Requirements
+## Requirements
 To run the scripts you need to install Python 3.6 or later and R V3.4.2 or later.
 Available at:
 - http://www.python.org/getit/
@@ -26,12 +26,12 @@ The input files are:
 - file containing protein_id, locus_tag and gene_length obtained from NCBI GenBank Bs3610 feature table (see [protein_id_locus_tag_gene_length.txt](example_data/raw_by_length/protein_id_locus_tag_gene_length.txt))
 - file containing protein_id and phylostratum obtained from phylostratigraphic procedure ([phyl_tree.py](scripts/phyl_tree.py)) (see [map_full_blast.txt](example_data/phyl/results/maps/map_full_blast.txt))
 
-```console
+```sh
 # help
-Rscript raw_by_length.R -h
+$ Rscript raw_by_length.R -h
 
 # run script
-Rscript raw_by_length.R ../example_data/raw_by_length/Bs3610_biofilm_raw_counts.txt ../example_data/raw_by_length/protein_id_locus_tag_gene_length.txt ../example_data/phyl/results/map/map_full_blast.txt ../example_data/raw_by_length/results/biofilm_raw_by_length.txt
+$ Rscript raw_by_length.R ../example_data/raw_by_length/Bs3610_biofilm_raw_counts.txt ../example_data/raw_by_length/protein_id_locus_tag_gene_length.txt ../example_data/phyl/results/map/map_full_blast.txt ../example_data/raw_by_length/results/biofilm_raw_by_length.txt
 ```
 
 ## Phylogenetic mapping
@@ -42,29 +42,29 @@ Run module with -h for detailed information on functionalities and parameters.
 
 ### Example
 The input files are:
-- tree nodes file: [example_data/phyl/nodes_Bacillus_biofilm.dmp](example_data/phyl/nodes_Bacillus_biofilm.dmp)
-- tree names file: [example_data/phyl/names_Bacillus_biofilm.dmp]([example_data/phyl/names_Bacillus_biofilm.dmp)
-- blast results file: [example_data/phyl/blast_example](example_data/phyl/blast_example)
+- tree nodes file: [nodes_Bacillus_biofilm.dmp](example_data/phyl/nodes_Bacillus_biofilm.dmp)
+- tree names file: [names_Bacillus_biofilm.dmp](example_data/phyl/names_Bacillus_biofilm.dmp)
+- blast results file: [blast_example](example_data/phyl/blast_example)
 
-```console
+```sh
 # help
-python3 phyl_tree.py -h
+$ python3 phyl_tree.py -h
 
 # run basic mapping
-python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/biofilm_blast_output ../example_data/phyl/results/maps/map_full_small.txt
+$ python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/biofilm_blast_output ../example_data/phyl/results/maps/map_full_small.txt
 
 # run mapping gap counts, export filtered and corrected maps
-python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/biofilm_blast_output ../example_data/phyl/results/ --ps_merge ../example_data/phyl/ps_merged.txt --hgt
+$ python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/biofilm_blast_output ../example_data/phyl/results/ --ps_merge ../example_data/phyl/ps_merged.txt --hgt
 ```
 Basic mapping result file:
-- mappings of genes phylostratigraphy method (blast input): [example_data/phyl/results/maps/map_full_blast.txt](example_data/phyl/results/maps/map_full_blast.txt) : results for full blast input (not example)
+- mappings of genes phylostratigraphy method (blast input): [map_full_blast.txt](example_data/phyl/results/maps/map_full_blast.txt) : results for full blast input (not example)
 
 Horizontal gene transfer analysis (flag **--hgt**) results files ([example_data/phyl/results/hgt/](example_data/phyl/results/hgt/)):
 - [ps_species_count.xlsx](example_data/phyl/results/hgt/ps_species_count.xlsx) : number of species per phylostratum (ps)
-- [gene_hit_species_count.xlsx]((example_data/phyl/results/hgt/gene_hit_species_count.xlsx) : number of species hits per gene per phylostratum (here gaps can be seen)
+- [gene_hit_species_count.xlsx](example_data/phyl/results/hgt/gene_hit_species_count.xlsx) : number of species hits per gene per phylostratum (here gaps can be seen)
 - [gene_hit_species_percent.xlsx](example_data/phyl/results/hgt/gene_hit_species_percent.xlsx) : percent of species hits (number_species_hits / total_number_species_ps)
 - [gene_hit_species_stats.xlsx](example_data/phyl/results/hgt/gene_hit_species_stats.xlsx) : percent hits per ps, original ps, hgt correction ps, hgt iterative correction ps, total species hit perc (from original ps to focal species), gap size (used in correction, flag **--hgt_gap**)
-- [map_filter_2.txt](example_data/phyl/results/hgt/[map_filter_2.txt) : map with removed genes with one or more gaps grater or equal to zero filter size (flag **--hgt_zero_filter**, default 2)
+- [map_filter_2.txt](example_data/phyl/results/hgt/map_filter_2.txt) : map with removed genes with one or more gaps grater or equal to zero filter size (flag **--hgt_zero_filter**, default 2)
 - [map_hgt_correction_2.txt](example_data/phyl/results/hgt/map_hgt_correction_2.txt) : map with genes ps corrected for a single gap (only first) grater or equal to hgt gap size (flag **--hgt_gap**, default 2)
 - [map_hgt_correction_iter_2.txt](example_data/phyl/results/hgt/map_hgt_correction_iter_2.txt) : map with genes ps iteratively corrected for gaps grater or equal to hgt gap size (flag **--hgt_gap**, default 2)
 
@@ -81,16 +81,17 @@ Process steps:
 Run module with -h for detailed information on parameters.
 
 ### Example
-The input file is a tab delimited text file with expression values, time point names must be separated with "_" from replicate numbers ([example_data/time_series_expression/trans_replicates_norm_length.txt](example_data/time_series_expression/trans_replicates_norm_length.txt))
-```console
+The input file is a tab delimited text file with expression values, time point names must be separated with "_" from replicate numbers ([trans_replicates_norm_length.txt](example_data/time_series_expression/trans_replicates_norm_length.txt))
+
+```sh
 # help
-python3 process_expression_time_series.py -h
+$ python3 process_expression_time_series.py -h
 
 # run with default params (used for TAI, PAI calculation)
-python3 process_expression_time_series.py  ../example_data/time_series_expression/trans_replicates_norm_length.txt ../example_data/time_series_expression/trans_TAI_res.txt 
+$ python3 process_expression_time_series.py  ../example_data/time_series_expression/trans_replicates_norm_length.txt ../example_data/time_series_expression/trans_TAI_res.txt 
 
 # run with all process steps (used for profile plotting)
-python3 process_expression_time_series.py ../example_data/time_series_expression/trans_replicates_norm_length.txt ../example_data/time_series_expression/trans_profiles_res.txt --transform --double_zero_remove --interpolate
+$ python3 process_expression_time_series.py ../example_data/time_series_expression/trans_replicates_norm_length.txt ../example_data/time_series_expression/trans_profiles_res.txt --transform --double_zero_remove --interpolate
 ```
 
 ## Functional analysis
@@ -107,14 +108,14 @@ The module implements the analysis for different ontology depths and expression 
 
 ### Example
 The inputs are gene category, expression and gene feature files (see [example_data/functional_analysis](example_data/functional_analysis)).
-The arguments (file paths, cutoffs, depths...) are given through a config file, see [example_data/functional_analysis/config.txt](example_data/functional_analysis/config.txt) for an example and instructions.
+The arguments (file paths, cutoffs, depths...) are given through a config file, see [config.txt](example_data/functional_analysis/config.txt) for an example and instructions.
 
-```console
+```sh
 # help
-python3 functional_analysis.py -h
+$ python3 functional_analysis.py -h
 
 # run
-python3 functional_analysis.py ../example_data/functional_analysis/config.txt
+$ python3 functional_analysis.py ../example_data/functional_analysis/config.txt
 ```
 
 #### Result files
@@ -140,7 +141,7 @@ The [trans_evo_ind.R](scripts/trans_evo_ind.R) script calculates and plots trans
 The input files are:
 - file with locus_tag and fraction of transcripts and replicates resolved (obtained by [raw_by_length.R](scripts/raw_by_length.R) and [process_expression_time_series.py](scripts/process_expression_time_series.py) steps 1 and 2) for calculating all transcriptome evolutionary indices (see [biofilm_raw_by_length.txt](example_data/trans_evo_ind/biofilm_raw_by_length.txt))
 - file containing protein_id, locus_tag and gene_length obtained from NCBI GenBank Bs3610 feature table (see [protein_id_locus_tag_gene_length.txt](example_data/raw_by_length/protein_id_locus_tag_gene_length.txt)) for matching protein_id with locus_tag
-- file containing protein_id and phylostratum obtained from phylostratigraphic procedure ([phyl_tree.py](scripts/phyl_tree.py)) (see [map_full_blast.txt](scripts/example_data/phyl/results/maps/map_full_blast.txt)) for calculating TAI
+- file containing protein_id and phylostratum obtained from phylostratigraphic procedure ([phyl_tree.py](scripts/phyl_tree.py)) (see [map_full_blast.txt](example_data/phyl/results/maps/map_full_blast.txt)) for calculating TAI
 - fasta file of Bs3610 and BlDSM13 protein sequences obtained from NCBI GenBank (see [Bs3610_protein.faa](example_data/trans_evo_ind/Bs3610_protein.faa) and [BlDSM13_protein.faa](example_data/trans_evo_ind/BlDSM13_protein.faa)) for calculating dNdS, TdNI and TdSI
 - fasta files of Bs3610 cds and ribosomal sequences obtained from NCBI GenBank (see [Bs3610_cds_from_genomic.fna](example_data/trans_evo_ind/Bs3610_cds_from_genomic.fna) and [Bs3610_ribosomal.fasta](example_data/trans_evo_ind/Bs3610_ribosomal.fasta)) for calculating codon usage bias and TCBI
 
