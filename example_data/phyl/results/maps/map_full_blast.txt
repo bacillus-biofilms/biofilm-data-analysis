@@ -1,4 +1,4 @@
-gene_id	PS
+protein_id	PS
 AQZ89256.1	1
 AQZ90605.1	1
 AQZ90603.1	1

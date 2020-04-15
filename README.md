@@ -44,20 +44,25 @@ Run module with -h for detailed information on functionalities and parameters.
 The input files are:
 - tree nodes file: [nodes_Bacillus_biofilm.dmp](example_data/phyl/nodes_Bacillus_biofilm.dmp)
 - tree names file: [names_Bacillus_biofilm.dmp](example_data/phyl/names_Bacillus_biofilm.dmp)
-- blast results file: [blast_example](example_data/phyl/blast_example)
+- blast results file (example): [blast_example](example_data/phyl/blast_example)
+- clusters results file (example): [clusters_example.txt](example_data/phyl/clusters_example.txt)
 
 ```sh
 # help
 $ python3 phyl_tree.py -h
 
-# run basic mapping
-$ python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/biofilm_blast_output ../example_data/phyl/results/maps/map_full_small.txt
+# run basic mapping with blast input
+$ python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/blast_full ../example_data/phyl/results/maps/map_full_blast.txt
+
+# run mapping with cluster input
+$ python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/clusters_full.txt ../example_data/phyl/results/maps/map_full_cluster.txt --cluster
 
 # run mapping gap counts, export filtered and corrected maps
-$ python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/biofilm_blast_output ../example_data/phyl/results/ --ps_merge ../example_data/phyl/ps_merged.txt --hgt
+$ python3 phyl_tree.py ../example_data/phyl/nodes_Bacillus_biofilm.dmp ../example_data/phyl/names_Bacillus_biofilm.dmp 535026 ../example_data/phyl/blast_full ../example_data/phyl/results/hgt/ --ps_merge ../example_data/phyl/ps_merged.txt --hgt
 ```
 Basic mapping result file:
-- mappings of genes phylostratigraphy method (blast input): [map_full_blast.txt](example_data/phyl/results/maps/map_full_blast.txt) : results for full blast input (not example)
+- mappings of genes with phylostratigraphy method (blast input): [map_full_blast.txt](example_data/phyl/results/maps/map_full_blast.txt) (results for full blast input, not example input)
+- mappings of genes with cluster based method (MMseqs2 type cluster input): [map_full_cluster.txt](example_data/phyl/results/maps/map_full_cluster.txt) (results for full cluster input, not example input)
 
 Horizontal gene transfer analysis (flag **--hgt**) results files ([example_data/phyl/results/hgt/](example_data/phyl/results/hgt/)):
 - [ps_species_count.xlsx](example_data/phyl/results/hgt/ps_species_count.xlsx) : number of species per phylostratum (ps)
