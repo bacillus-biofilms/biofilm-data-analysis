@@ -109,11 +109,11 @@ class Tree:
 
                 parent_2_children[parent_id].append(child_id)
 
-        name = parent_id
-        if parent_id in node_2_name:
-            name = node_2_name[parent_id]
+        name = root_id
+        if root_id in node_2_name:
+            name = node_2_name[root_id]
         else:
-            print("ID: " + int(parent_id) + " is not in names file. Names set to id value.")
+            print("ID: " + int(root_id) + " is not in names file. Names set to id value.")
 
         node = Node(root_id, is_root=True, name=name)
         self.root = node
@@ -126,6 +126,8 @@ class Tree:
             current_node.is_phyl_node = True
             current_node = current_node.parent
 
+        current_node.is_phyl_node = True
+        self.phyl_nodes.append(current_node)
         # set phylostratum numbers
         PS = 1
         current_node = self.root
